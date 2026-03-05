@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import TodoForm from './components/TodoForm.tsx';
+import TodoList from './components/TodoList.tsx';
 import './App.css'
 
 function App() {
@@ -35,8 +37,9 @@ function App() {
 
   return (
     <>
-      <div>
-
+      <div className="container">
+          <TodoForm addTodo={addTodo} />
+          <TodoList todos={todos} deleteTodo={deleteTodo} toggleTodo={toggleTodo} />
       </div>
     </>
   )
