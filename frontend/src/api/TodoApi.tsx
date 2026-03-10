@@ -38,7 +38,7 @@ export const toggleTodo = async(id: number, completed: boolean) => {
 }
 
 export const deleteTodoAPI = async (id: number) => {
-    const response = await fetch(`http://localhost:3000/todos/${id}`, {
+    const response = await fetch(`http://localhost:3000/todo/${id}`, {
         method: "DELETE"
     });
 
